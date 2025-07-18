@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:background="#749DDC"
+        android:id="@+id/inputJoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/enter_a_joke"
+        android:padding="12dp" />
+
+    <Button
+        android:backgroundTint="@color/black"
+        android:id="@+id/btnAddJoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_joke"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:backgroundTint="@color/black"
+        android:id="@+id/btnFetchJoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Joke from API"
+        android:layout_marginTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jokesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
